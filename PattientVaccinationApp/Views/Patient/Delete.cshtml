@@ -1,0 +1,72 @@
+﻿@model PattientVaccinationApp.Models.PatientDto
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Удаление</h2>
+
+<h3>Вы уверенны что хотите удалить учетную запись пациента?</h3>
+<div>
+   <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SNILS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SNILS)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> 
+            <br><br>
+            |@Html.ActionLink("Вернуться к списку пациентов", "Index")|
+        </div>
+    }
+</div>

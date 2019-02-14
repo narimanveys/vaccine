@@ -1,0 +1,56 @@
+﻿@model PattientVaccinationApp.Models.VaccinationDto
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Удаление прививки</h2>
+
+<h3>Вы уверены что хотите удалить это назначение?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vaccine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vaccine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsVaccinationAllowed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsVaccinationAllowed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Удалить" class="btn btn-default" />
+        <br><br>
+        | @Html.ActionLink("Вернуться к пациенту", "Details", "Patient", new { id = Model.PatientId }, null) |
+    </div>
+    }
+</div>

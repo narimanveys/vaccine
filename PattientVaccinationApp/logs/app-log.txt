@@ -1,0 +1,20 @@
+2019-02-14 12:51:53.4788|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index
+2019-02-14 12:51:58.7108|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index Метод завершил свою работу
+2019-02-14 12:52:45.0160|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Edit
+2019-02-14 12:52:45.0620|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Edit Метод завершил свою работу
+2019-02-14 12:52:57.3401|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index
+2019-02-14 12:52:57.3401|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index Метод завершил свою работу
+2019-02-14 12:52:59.0851|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Details
+2019-02-14 12:52:59.1020|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Details Метод завершил свою работу
+2019-02-14 12:53:02.7020|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index
+2019-02-14 12:53:02.7260|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index Метод завершил свою работу
+2019-02-14 12:53:03.9563|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index
+2019-02-14 12:53:03.9762|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index Метод завершил свою работу
+2019-02-14 12:53:06.0850|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Details
+2019-02-14 12:53:06.1030|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Details Метод завершил свою работу
+2019-02-14 12:53:08.8994|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Create
+2019-02-14 12:53:08.9014|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Create Метод завершил свою работу
+2019-02-14 12:53:25.9676|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Create
+2019-02-14 12:53:26.4173|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Create Метод завершил свою работу
+2019-02-14 12:53:26.4173|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Details
+2019-02-14 12:53:26.4343|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Details Метод завершил свою работу

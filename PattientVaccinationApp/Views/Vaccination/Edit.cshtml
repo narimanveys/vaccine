@@ -1,0 +1,68 @@
+﻿@model PattientVaccinationApp.Models.VaccinationDto
+
+@{
+    ViewBag.Title = "Редкатирование прививки пациента";
+}
+
+<h2>Редактировать прививку</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Vaccine, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EnumDropDownListFor(model => model.Vaccine, "--Выбрать--", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Vaccine, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.IsVaccinationAllowed, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.IsVaccinationAllowed)
+                @Html.ValidationMessageFor(model => model.IsVaccinationAllowed, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.ReleaseDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(m => m.ReleaseDate, new { htmlAttributes = new { @class ="form-control" } })
+            @Html.ValidationMessageFor(model => model.ReleaseDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @*<div class="form-group">
+        @Html.LabelFor(model => model.ReleaseDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.ReleaseDate, "{0:dd/MM/yyyy}", new { maxlength = 10 })
+            @Html.ValidationMessageFor(model => model.ReleaseDate, "", new { @class = "text-danger" })
+        </div>
+    </div> *@
+    
+
+    @Html.HiddenFor(model => model.PatientId)
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Сохранить" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+    <div>
+        @Html.ActionLink("Вернуться на страницу пациента", "Details", "Patient", new { id = Model.PatientId }, null)
+    </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

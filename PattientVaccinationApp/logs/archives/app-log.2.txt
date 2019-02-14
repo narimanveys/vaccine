@@ -1,0 +1,6 @@
+2019-01-31 00:48:42.6611|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Edit
+2019-01-31 00:48:42.7784|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Edit Метод завершил свою работу
+2019-01-31 00:48:48.2323|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index
+2019-01-31 00:48:48.2323|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Index Метод завершил свою работу
+2019-01-31 00:48:49.7423|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Create
+2019-01-31 00:48:49.7423|INFO|PattientVaccinationApp.ActionFilters.LogActionAttribute|Create Метод завершил свою работу
